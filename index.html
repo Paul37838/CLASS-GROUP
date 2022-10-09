@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <header>
+    <br />
+    <p class="logo">G.F.C</p>
+  </header>
+  <body>
+    <p class="h2">CLASS GROUP</p>
+    <div class="flex">
+      <div class="box">
+        <p class="name">JSS1</p>
+        <a href="">
+          <p class="p">JOIN THE GROUP</p>
+        </a>
+      </div>
+      <div class="box">
+        <p class="name">JSS2</p>
+        <a href="">
+          <p class="p">JOIN THE GROUP</p>
+        </a>
+      </div>
+      <div class="box">
+        <p class="name">JSS3</p>
+        <a href="">
+          <p class="p">JOIN THE GROUP</p>
+        </a>
+      </div> 
+       </div>
+
+       <div class="flexbox">
+          <div class="box1">
+            <p class="name">SS1</p>
+              <div>
+                <a href="">
+                  <p class="p">JOIN THE GROUP</p>
+                </a>
+              </div>
+          </div>
+          <div class="box1">
+            <p class="name">SS2</p>
+            <a href="">
+            <p class="p">JOIN THE GROUP</p>
+          </a>
+          </div>
+          <div class="box1">
+            <p class="name">SS3</p>
+            <a href="">
+              <p class="p">JOIN THE GROUP</p>
+            </a>
+          </div>
+       </div>
+  </body>
+  <style>
+    .p{
+      text-align: center;
+      margin-top: 1px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    @media(max-width:900px){
+        .flexbox{
+           flex-direction: column;
+        }
+        .box1{
+          align-self: center;
+
+        }
+    }
+    .flexbox{
+        justify-content: space-around;
+        display: flex;
+    }
+    .box1 {
+      margin-top: 2em;
+      width: 200px;
+      height: 120px;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    .name {
+      text-align: center;
+      margin-top: 2em;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 20px;
+    }
+    @media (max-width: 900px) {
+      .flex {
+        flex-direction: column;
+      }
+      .box {
+        align-self: center;
+        margin-top: 2em;
+      }
+    }
+    .flex {
+      justify-content: space-around;
+      display: flex;
+    }
+    .box {
+      width: 200px;
+      height: 120px;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    .h2 {
+      margin-top: 1em;
+      text-align: center;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 20px;
+    }
+    * {
+      margin: 0%;
+      padding: 0%;
+    }
+    header {
+      background: coral;
+      min-height: 70px;
+    }
+    .logo {
+      margin-left: 3em;
+      letter-spacing: 3px;
+      color: rgb(220, 19, 19);
+    }
+  </style>
+</html>
